@@ -23,7 +23,7 @@
   ansible.builtin.get_url:
     url: "{{ minecraft_waterland_versions[mcw_version].resource_packs['url'] }}"
     dest: "{{ mcw_temp_dir_info.path }}/resource-pack-{{ mcw_version }}.zip"
-    mode: 0644
+    mode: "0644"
 
 - name: Get the status of downloaded Minecraft Waterland resource pack file
   ansible.builtin.stat:

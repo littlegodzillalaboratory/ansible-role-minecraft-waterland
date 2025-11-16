@@ -1,6 +1,6 @@
-<img align="right" src="https://raw.github.com/cliffano/ansible-role-minecraft-waterland/main/avatar.jpg" alt="Avatar"/>
+<img align="right" src="https://raw.github.com/littlegodzillalaboratory/ansible-role-minecraft-waterland/main/avatar.jpg" alt="Avatar"/>
 
-[![Build Status](https://github.com/cliffano/ansible-role-minecraft-waterland/workflows/CI/badge.svg)](https://github.com/cliffano/ansible-role-minecraft-waterland/actions?query=workflow%3ACI)
+[![Build Status](https://github.com/littlegodzillalaboratory/ansible-role-minecraft-waterland/workflows/CI/badge.svg)](https://github.com/littlegodzillalaboratory/ansible-role-minecraft-waterland/actions?query=workflow%3ACI)
 [![Security Status](https://snyk.io/test/github/cliffano/ansible-role-minecraft-waterland/badge.svg)](https://snyk.io/test/github/cliffano/ansible-role-minecraft-waterland)
 <br/>
 

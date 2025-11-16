@@ -2,9 +2,9 @@
 dependencies: []
 
 galaxy_info:
-  namespace: cliffano
+  namespace: littlegodzillalaboratory
   role_name: minecraft_waterland
-  author: Cliffano Subagio
+  author: Cliffano Subagio <cliffano@gmail.com>
   description: Ansible role for provisioning Minecraft Waterland customisations
   license: "license (MIT)"
   min_ansible_version: 10.3.0
