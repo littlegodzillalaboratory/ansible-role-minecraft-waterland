@@ -21,7 +21,7 @@
 
 - name: Download Minecraft Waterland resource pack file
   ansible.builtin.get_url:
-    url: "{{ minecraft_waterland_versions[mcw_version].resource_packs['url'] }}"
+    url: "{{ minecraft_waterland_versions[mcw_version].resource_pack['url'] }}"
     dest: "{{ mcw_temp_dir_info.path }}/resource-pack-{{ mcw_version }}.zip"
     mode: "0644"
 
@@ -41,3 +41,9 @@
     src: "{{ mcw_temp_dir_info.path }}/resource-pack-{{ mcw_version }}.zip"
     dest: "{{ mcw_resource_pack_install_dir }}"
     remote_src: true
+
+- name: Remove temporary directory and the downloaded files
+  ansible.builtin.file:
+    path: "{{ mcw_temp_dir_info.path }}"
+    state: absent
+  when: mcw_temp_dir_info.path is defined
