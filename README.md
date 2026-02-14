@@ -1,7 +1,7 @@
 <img align="right" src="https://raw.github.com/littlegodzillalaboratory/ansible-role-minecraft-waterland/main/avatar.jpg" alt="Avatar"/>
 
 [![Build Status](https://github.com/littlegodzillalaboratory/ansible-role-minecraft-waterland/workflows/CI/badge.svg)](https://github.com/littlegodzillalaboratory/ansible-role-minecraft-waterland/actions?query=workflow%3ACI)
-[![Security Status](https://snyk.io/test/github/cliffano/ansible-role-minecraft-waterland/badge.svg)](https://snyk.io/test/github/cliffano/ansible-role-minecraft-waterland)
+[![Security Status](https://snyk.io/test/github/littlegodzillalaboratory/ansible-role-minecraft-waterland/badge.svg)](https://snyk.io/test/github/littlegodzillalaboratory/ansible-role-minecraft-waterland)
 <br/>
 
 Ansible Role Minecraft Waterland
@@ -21,4 +21,4 @@ Use the role in your playbook:
         ans_transformation: 'upper'
 
       roles:
-        - cliffano.minecraft_waterland
+        - littlegodzillalaboratory.minecraft_waterland
