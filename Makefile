@@ -46,7 +46,7 @@ lint:
 	$(call python_venv,ansible-lint -v .)
 	$(call python_venv,yamllint .)
 
-test:
+test: x-test-fixtures
 	$(call python_venv,molecule test)
 
 # Update Makefile to the latest version tag
