@@ -1,3 +1,3 @@
 ---
 mcw_version: '0.11.0'
-mcw_resource_pack_install_dir: ~/.minecraft/resourcepacks/
+mcw_resource_pack_install_dir: "{{ ansible_user_dir }}/.minecraft/resourcepacks/"
