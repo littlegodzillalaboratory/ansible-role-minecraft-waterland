@@ -1,4 +1,4 @@
-x-test-fixtures:
+x-pre-test:
 	mkdir -p ~/.minecraft/resourcepacks/
 
-.PHONY: x-test-fixtures
+.PHONY: x-pre-test
