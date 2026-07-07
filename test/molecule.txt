@@ -1,0 +1,119 @@
+
+playbook: /opt/workspace/molecule/default/converge.yml
+
+PLAY [Converge] ****************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [localhost]
+
+TASK [Include workspace] *******************************************************
+included: littlegodzillalaboratory.minecraft_waterland for localhost
+
+TASK [littlegodzillalaboratory.minecraft_waterland : Get the status of Minecraft Waterland resource pack install directory] ***
+[WARNING]: Deprecation warnings can be disabled by setting `deprecation_warnings=False` in ansible.cfg.
+[DEPRECATION WARNING]: INJECT_FACTS_AS_VARS default to `True` is deprecated, top-level facts will not be auto injected after the change. This feature will be removed from ansible-core version 2.24.
+Origin: /opt/workspace/defaults/main.yml:3:32
+
+1 ---
+2 mcw_version: '0.11.0'
+3 mcw_resource_pack_install_dir: "{{ ansible_user_dir }}/.minecraft/resourcepacks/"
+                                 ^ column 32
+
+Use `ansible_facts["fact_name"]` (no `ansible_` prefix) instead.
+
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.minecraft_waterland : Fail if Minecraft Waterland resource pack install dir does not exist] ***
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.minecraft_waterland : Get the status of installed Minecraft Waterland resource pack meta file] ***
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.minecraft_waterland : Create a temporary directory for storing downloaded files] ***
+changed: [localhost]
+
+TASK [littlegodzillalaboratory.minecraft_waterland : Display the path to the temporary directory] ***
+ok: [localhost] => {
+    "mcw_temp_dir_info.path": "/tmp/ansible.84g9v041mcw-tmp"
+}
+
+TASK [littlegodzillalaboratory.minecraft_waterland : Download Minecraft Waterland resource pack file] ***
+changed: [localhost]
+
+TASK [littlegodzillalaboratory.minecraft_waterland : Get the status of downloaded Minecraft Waterland resource pack file] ***
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.minecraft_waterland : Fail if downloaded Minecraft Waterland resource pack file checksum does not match] ***
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.minecraft_waterland : Unarchive Minecraft Waterland resource pack file to install dir] ***
+changed: [localhost]
+
+TASK [littlegodzillalaboratory.minecraft_waterland : Remove temporary directory and the downloaded files] ***
+changed: [localhost]
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=10   changed=4    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0
+
+
+PLAY [Converge] ****************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [localhost]
+
+TASK [Include workspace] *******************************************************
+included: littlegodzillalaboratory.minecraft_waterland for localhost
+
+TASK [littlegodzillalaboratory.minecraft_waterland : Get the status of Minecraft Waterland resource pack install directory] ***
+[WARNING]: Deprecation warnings can be disabled by setting `deprecation_warnings=False` in ansible.cfg.
+[DEPRECATION WARNING]: INJECT_FACTS_AS_VARS default to `True` is deprecated, top-level facts will not be auto injected after the change. This feature will be removed from ansible-core version 2.24.
+Origin: /opt/workspace/defaults/main.yml:3:32
+
+1 ---
+2 mcw_version: '0.11.0'
+3 mcw_resource_pack_install_dir: "{{ ansible_user_dir }}/.minecraft/resourcepacks/"
+                                 ^ column 32
+
+Use `ansible_facts["fact_name"]` (no `ansible_` prefix) instead.
+
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.minecraft_waterland : Fail if Minecraft Waterland resource pack install dir does not exist] ***
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.minecraft_waterland : Get the status of installed Minecraft Waterland resource pack meta file] ***
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.minecraft_waterland : Create a temporary directory for storing downloaded files] ***
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.minecraft_waterland : Display the path to the temporary directory] ***
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.minecraft_waterland : Download Minecraft Waterland resource pack file] ***
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.minecraft_waterland : Get the status of downloaded Minecraft Waterland resource pack file] ***
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.minecraft_waterland : Fail if downloaded Minecraft Waterland resource pack file checksum does not match] ***
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.minecraft_waterland : Unarchive Minecraft Waterland resource pack file to install dir] ***
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.minecraft_waterland : Remove temporary directory and the downloaded files] ***
+skipping: [localhost]
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=4    changed=0    unreachable=0    failed=0    skipped=8    rescued=0    ignored=0
+
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.0.1, pluggy-1.6.0
+rootdir: /
+plugins: testinfra-10.2.2
+collected 6 items
+
+tests/test_defaults.py ......                                            [100%]
+
+============================== 6 passed in 2.84s ===============================
