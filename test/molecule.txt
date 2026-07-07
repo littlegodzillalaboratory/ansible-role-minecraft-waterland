@@ -34,7 +34,7 @@ changed: [localhost]
 
 TASK [littlegodzillalaboratory.minecraft_waterland : Display the path to the temporary directory] ***
 ok: [localhost] => {
-    "mcw_temp_dir_info.path": "/tmp/ansible.84g9v041mcw-tmp"
+    "mcw_temp_dir_info.path": "/tmp/ansible.n8o3j__vmcw-tmp"
 }
 
 TASK [littlegodzillalaboratory.minecraft_waterland : Download Minecraft Waterland resource pack file] ***
@@ -109,11 +109,11 @@ PLAY RECAP *********************************************************************
 localhost                  : ok=4    changed=0    unreachable=0    failed=0    skipped=8    rescued=0    ignored=0
 
 ============================= test session starts ==============================
-platform linux -- Python 3.12.3, pytest-9.0.1, pluggy-1.6.0
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0
 rootdir: /
 plugins: testinfra-10.2.2
 collected 6 items
 
 tests/test_defaults.py ......                                            [100%]
 
-============================== 6 passed in 2.84s ===============================
+============================== 6 passed in 3.20s ===============================
