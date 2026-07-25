@@ -34,7 +34,7 @@ changed: [localhost]
 
 TASK [littlegodzillalaboratory.minecraft_waterland : Display the path to the temporary directory] ***
 ok: [localhost] => {
-    "mcw_temp_dir_info.path": "/tmp/ansible.n8o3j__vmcw-tmp"
+    "mcw_temp_dir_info.path": "/tmp/ansible.szd35issmcw-tmp"
 }
 
 TASK [littlegodzillalaboratory.minecraft_waterland : Download Minecraft Waterland resource pack file] ***
@@ -116,4 +116,4 @@ collected 6 items
 
 tests/test_defaults.py ......                                            [100%]
 
-============================== 6 passed in 3.20s ===============================
+============================== 6 passed in 3.08s ===============================
